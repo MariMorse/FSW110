@@ -60,3 +60,20 @@ document.getElementById("myOL");
 oList.append(lItem3);
 
 console.dir(oList);
+
+lItem1.textContent = "HTML";
+oList.append(lItem1);
+
+lItem2.textContent = "JavaScript";
+oList.append(lItem2);
+
+lItem3.textContent = "DOM";
+oList.append(lItem3);
+
+var footE = document.createElement("footer");
+footE .setAttribute("id", "fElement");
+
+
+
+
+
