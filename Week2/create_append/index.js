@@ -12,17 +12,23 @@ var myList = document.createElement("ol")
 myList.setAttribute("id", "myOL")
 document.body.appendChild(myList);
 
-var newLi = document.createElement("li")
+var newLiOne = document.createElement("li")
 document.getElementById("myOL")
-myList.append(newLi);
+myList.append(newLiOne);
 
-var newLi = document.createElement("li")
+var newLiTwo = document.createElement("li")
 document.getElementById("myOL")
-myList.append(newLi);
+myList.append(newLiTwo);
 
-var newLi = document.createElement("li")
+var newLi3 = document.createElement("li")
 document.getElementById("myOL")
-myList.append(newLi);
+myList.append(newLi3);
+console.dir(myList);
+
+var lI3 = document.getElementById("myOL")
+newLiOne.textContent = "Bedtime!!"
+myList.appendChild(newLiOne);
+
 
 
 
