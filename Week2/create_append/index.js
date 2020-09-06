@@ -4,15 +4,25 @@ document.body.append(newHeader);
 
 
 
-var newP = document.createElement("p")
+var newP = document.createElement("p");
 newP.textContent = "All of this was created with JavaScript"
-document.body.append(newP)
+document.body.append(newP);
 
-var myOL = document.createElement("ol");
-console.dir(myOL);
+var myList = document.createElement("ol")
+myList.setAttribute("id", "myOL")
+document.body.appendChild(myList);
 
-document.getElementsByTagName("ol")[0].setAttribute("id", "myList");
+var newLi = document.createElement("li")
+document.getElementById("myOL")
+myList.append(newLi);
 
+var newLi = document.createElement("li")
+document.getElementById("myOL")
+myList.append(newLi);
+
+var newLi = document.createElement("li")
+document.getElementById("myOL")
+myList.append(newLi);
 
 
 
