@@ -8,7 +8,11 @@ var newP = document.createElement("p")
 newP.textContent = "All of this was created with JavaScript"
 document.body.append(newP)
 
-var myDiv = document.createElement("div");
-console.dir(myDiv);
+var myOL = document.createElement("ol");
+console.dir(myOL);
+
+document.getElementsByTagName("ol")[0].setAttribute("id", "myList");
+
+
 
 
