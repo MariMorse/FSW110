@@ -22,12 +22,19 @@ myList.append(newLiTwo);
 
 var newLi3 = document.createElement("li")
 document.getElementById("myOL")
-myList.append(newLi3);
+myList.append(newLi3)
+
 console.dir(myList);
 
-var lI3 = document.getElementById("myOL")
+
 newLiOne.textContent = "Bedtime!!"
-myList.appendChild(newLiOne);
+myList.append(newLiOne);
+
+newLiTwo.textContent = "Sleepy!!"
+myList.append(newLiTwo);
+
+newLi3.textContent = "Going To BED!! Goodnight!!"
+myList.append(newLi3);
 
 
 
