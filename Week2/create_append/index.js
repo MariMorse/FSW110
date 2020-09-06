@@ -6,15 +6,17 @@ var newP = document.createElement("p")
 newP.textContent = "All of this was created with JavaScript"
 document.body.append(newP)
 
-let items = ['Happy', 'Sad', 'Sunshine', 'Rain'],
+var newList = document.createElement("ol");
 
-ol = document.createElement('ol');
+var listItem1 = document.createElement("li");
+listItem1.innerHTML = ("HTML");
+listItem1.appendChild(newList);
 
-document.getElementById('myOList').appendChild(ol);
+var listItem2 = document.createElement("li")
+listItem2.innerHTML = ("Javascript");
+listItem2.appendChild(newList);
 
-items.forEach(function (item) {
-    let li = document.createElement('li');
-    ol.appendChild(li);
+var listItem3 = document.createElement("li");
+listItem3.innerHTML = ("DOM");
+listItem3.appendChild(newList);
 
-    li.innerHtml += item;
-});
