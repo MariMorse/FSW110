@@ -3,14 +3,14 @@ var navLinkSpace = document.createTextNode(' ');
 var navLink1 = document.createElement("a");
 var navLink1Txt = document.createTextNode("Home");
 navLink1.appendChild(navLink1Txt)
-navLink1.href = 'index.html';
+navLink1.href = "index.html";
 pageNav.appendChild(navLink1);
 pageNav.appendChild(navLinkSpace);
 var navLink2 = document.createElement("a");
 var navLSpace2 = document.createTextNode(' ');
-var navLink2Txt = document.createTextNode('About Us');
+var navLink2Txt = document.createTextNode("About Us");
 navLink2.appendChild(navLink2Txt)
-navLink2.href = 'about.html';
+navLink2.href = "about.html";
 pageNav.appendChild(navLink2);
 pageNav.appendChild(navLSpace2);
 var navLink3 = document.createElement("a");
