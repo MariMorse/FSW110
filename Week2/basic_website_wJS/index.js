@@ -22,7 +22,7 @@ var txt3 = document.createTextNode("About");
 anchorThree .appendChild(txt3);
 
 navBar.appendChild(anchorThree);
-document.body.appendChild(navBar);
+document.body
 
 var headTag = document.createElement("h1");
 headTag .setAttribute("id", "header");
@@ -72,8 +72,13 @@ oList.append(lItem3);
 
 var footE = document.createElement("footer");
 footE .setAttribute("id", "fElement");
+document.body.appendChild(footE);
 
+var contact = document.createElement("A");
+contact .setAttribute("href", "/url");
+var email = document.createTextNode("marianne.morse@bryanuniversity.edu");
+contact.appendChild(email);
 
+footE.appendChild(contact);
 
-
-
+console.dir(footE);
