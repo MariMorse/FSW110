@@ -7,13 +7,16 @@ navLink1.href = 'index.html';
 pageNav.appendChild(navLink1);
 pageNav.appendChild(navLinkSpace);
 var navLink2 = document.createElement("a");
+var navLSpace2 = document.createTextNode(' ');
 var navLink2Txt = document.createTextNode('About Us');
 navLink2.appendChild(navLink2Txt)
 navLink2.href = 'about.html';
 pageNav.appendChild(navLink2);
+pageNav.appendChild(navLSpace2);
 var navLink3 = document.createElement("a");
 var navLink3Txt = document.createTextNode("Services");
 pageNav.appendChild(navLink3);
+navLink3.appendChild(navLink3Txt);
 navLink3.href = "services.html";
 document.body.append(pageNav);
 
