@@ -1,28 +1,23 @@
-var navBar = document.createElement("nav");
-document.body.appendChild(navBar);
-console.dir(navBar);
+var pageNav = document.createElement("nav");
+var navLinkSpace = document.createTextNode(' ');
+var navLink1 = document.createElement("a");
+var navLink1Txt = document.createTextNode("Home");
+navLink1.appendChild(navLink1Txt)
+navLink1.href = 'index.html';
+pageNav.appendChild(navLink1);
+pageNav.appendChild(navLinkSpace);
+var navLink2 = document.createElement("a");
+var navLink2Txt = document.createTextNode('About Us');
+navLink2.appendChild(navLink2Txt)
+navLink2.href = 'about.html';
+pageNav.appendChild(navLink2);
+var navLink3 = document.createElement("a");
+var navLink3Txt = document.createTextNode("Services");
+pageNav.appendChild(navLink3);
+navLink3.href = "services.html";
+document.body.append(pageNav);
 
-var anchorOne = document.createElement("A");
-anchorOne .setAttribute("href", "/html");
-var txt1 = document.createTextNode("Home");
-anchorOne.appendChild(txt1);
-
-navBar.appendChild(anchorOne);
-
-var anchorTwo = document.createElement("A");
-anchorTwo .setAttribute("href", "/html");
-var txt2 = document.createTextNode("Products");
-anchorTwo .appendChild(txt2);
-
-navBar.appendChild(anchorTwo);
-
-var anchorThree = document.createElement("A");
-anchorThree .setAttribute("href", "/html");
-var txt3 = document.createTextNode("About");
-anchorThree .appendChild(txt3);
-
-navBar.appendChild(anchorThree);
-document.body
+console.dir(pageNav);
 
 var headTag = document.createElement("h1");
 headTag .setAttribute("id", "header");
