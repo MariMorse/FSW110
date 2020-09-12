@@ -6,6 +6,7 @@ for (var i = 0; i < 10; i++) {
     hOne.textContent = "Hello World";
     document.body.appendChild(hOne);
     hOne.style.color = "blue";
+    hOne.style.border = "thick dotted #0000FF";
     hOne.style.backgroundColor = "yellow";
 }
 
