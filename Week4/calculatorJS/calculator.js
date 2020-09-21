@@ -15,3 +15,10 @@ function subtract() {
     var ans2 = document.getElementById("answer2");
     ans2.value = valOne - valTwo;
 }
+
+function multiply() {
+    var mult1 = parseInt(document.getElementById("val1").value);
+    var mult2 = parseInt(document.getElementById("val2").value);
+    var ans3 = document.getElementById("answer3");
+    ans3.value = mult1 * mult2;
+}
