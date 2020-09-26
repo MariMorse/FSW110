@@ -9,7 +9,7 @@ form {
   
   input  {
     font: 1em sans-serif;
-    width: 300px;
+    size: 30;
     box-sizing: border-box;
     border: 1px solid #999;
   }
