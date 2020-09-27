@@ -1,21 +1,10 @@
-const form = form.passengerInfo
+document.getElementById("myBtn").addEventListener("click", function () {
+    const firstN = document.getElementById("nameF");
+    const lastN = document.getElementById("nameL");
+    const age = document.getElementById("age");
+    const gender = document.getElementById("gender");
+    const city = document.getElementById("city");
+    const dietary = document.getElementById("dietRestrict")
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault()
-
-function myalert() {
-    const first = form.fName.value;
-    const last = form.lName.value;
-    const age = form.age.value; 
-    const gender = form.gender.value; 
-    const cityselect = form.city.value;
-
-    const dietary = [];
-        for(let i = 0; i < form.diet.length; i++){
-            if(form.diet[i].checked){
-        dietary.push(form.diet[i].value)
-    }
-        }
-    alert(" First Name: " + "" +  first + " \nLast Name: " + "" + last + " \nAge: " + "" + age + " \nGender: " + "" + gender + " \nCity: " + "" + cityselect + " \nDietary Restrictions: " + "" + checkedInput)
-}
+    alert(" First Name: " + "" + firstN.value + " \nLast Name: " + "" + lastN.value + " \nAge: " + "" + age.value + " \nGender: " + "" + gender.value + " \nCity: " + "" + city.value + " \nDietary Restrictions: " + "" + dietary.value)
 });
