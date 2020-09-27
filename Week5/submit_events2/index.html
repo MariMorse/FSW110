@@ -16,25 +16,26 @@
                 <input type="text" id="lname" name="lname" required /></p>
             <p><label for="age">Age: </label>
                 <input type="number" id="age" name="age" required></p>
-            <p><input type="radio" id="male" name="gender" value="male" />
+            <p><input type="radio" id="gender" name="gender" value="male" />
                 <label for="male">Male</label><br>
-                <input type="radio" id="female" name="gender" value="female" />
+                <input type="radio" id="gender" name="gender" value="female" />
                 <label for="female">Female</label><br>
-                <input type="radio" id="other" name="gender" value="other" />
-                <label for="other">Other</label></p>
+                <input type="radio" id="gender" name="gender" value="other" />
+                <label for="other">Other</label>
+                <input type="radio" id="gender" name="gender" value="noAnswer" />
+                <label for="noAnswer">Prefer not to answer </label></p>
             <p><label for="destination">Location:</label>
-                <select name="destination">
-                    <option value="moon">Neverland</option>
-                    <option value="mars">Land of Duloc</option>
-                    <option value="space">Pixie Hollow</option>
+                <select name="destination" id="city">
+                    <option value="city">Neverland</option>
+                    <option value="city">Land of Duloc</option>
+                    <option value="city">Pixie Hollow</option>
                 </select></p>
-            <p><label for="dietary">Dietary Restrictions:</label><br>
-
-                <label><input type="checkbox" />Vegan</label>
-                <label><input type="checkbox" />Diabetic</label>
-                <label><input type="checkbox" />Peanut Allergies</label>
-                <label><input type="checkbox" />Gluten Free</label></p>
-                <p><button id="myBtn">Submit</button></p>
+            <p><label for="dietary" id="dietRestrict">Dietary Restrictions:</label><br>
+                <label><input type="checkbox" id="vegan" />Vegan</label>
+                <label><input type="checkbox" id="diabetic" />Diabetic</label>
+                <label><input type="checkbox" id="peanut" />Peanut Allergies</label>
+                <label><input type="checkbox" id="gluten" />Gluten Free</label></p>
+            <p><input type="submit" value="submit" onclick="myFunction()">
         </form>
     </div>
     <script src="index.js"></script>
