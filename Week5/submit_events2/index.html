@@ -8,7 +8,6 @@
 
 <body>
     <h1 id="hOne">Fairy Tale Airline</h1>
-    <div id="form">
         <form name="passengerInfo">
             <p><label for="fname">First name: </label>
                 <input type="text" id="fname" name="fname" required /></p>
@@ -16,7 +15,7 @@
                 <input type="text" id="lname" name="lname" required /></p>
             <p><label for="age">Age: </label>
                 <input type="number" id="age" name="age" required></p>
-            <p><input type="radio" id="gender" name="gender" value="male" />
+            <p><input type="radio" id="male" name="male" value="male" />
                 <label for="male">Male</label><br>
                 <input type="radio" id="gender" name="gender" value="female" />
                 <label for="female">Female</label><br>
@@ -25,19 +24,19 @@
                 <input type="radio" id="gender" name="gender" value="noAnswer" />
                 <label for="noAnswer">Prefer not to answer </label></p>
             <p><label for="destination">Location:</label>
-                <select name="destination" id="city">
-                    <option value="city">Neverland</option>
-                    <option value="city">Land of Duloc</option>
-                    <option value="city">Pixie Hollow</option>
+                <select name="city" id="city">
+                    <option value="Neverland">Neverland</option>
+                    <option value="Land of Duloc">Land of Duloc</option>
+                    <option value="Pixie Hollow">Pixie Hollow</option>
                 </select></p>
             <p><label for="dietary" id="dietRestrict">Dietary Restrictions:</label><br>
-                <label><input type="checkbox" id="vegan" />Vegan</label>
-                <label><input type="checkbox" id="diabetic" />Diabetic</label>
-                <label><input type="checkbox" id="peanut" />Peanut Allergies</label>
-                <label><input type="checkbox" id="gluten" />Gluten Free</label></p>
-            <p><input type="submit" value="submit" onclick="myFunction()">
+                <label><input type="checkbox" name="diet" />Vegan</label>
+                <label><input type="checkbox" name="diet" />Diabetic</label>
+                <label><input type="checkbox" name="diet" />Peanut Allergies</label>
+                <label><input type="checkbox" name="diet" />Gluten Free</label></p>
+            <p><button id="myBtn">Submit</button></p>
         </form>
-    </div>
+    
     <script src="index.js"></script>
 </body>
 
