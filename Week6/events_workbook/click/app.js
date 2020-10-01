@@ -1,3 +1,5 @@
-const box = document.getElementsByTagName("div")
+document.getElementsByClassName("red-box").addEventListener("click",function(){
+    red-box.style.visibilty = "hidden";
+});
 
 
