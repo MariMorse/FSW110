@@ -1,4 +1,7 @@
-
+let result = document.getElementById('output')
+window.addEventListener('keydown', function(event) {
+     result.textContent = `You pressed "${event.key}". It's key code is ${event.keyCode}`
+})
 
 
 
