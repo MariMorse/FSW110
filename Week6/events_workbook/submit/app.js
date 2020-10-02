@@ -7,7 +7,7 @@
 
 
 
-/*There is a lot you can do with form, and a lot that browsers and browser extentions can do if you give your for the correct attributes
+/*There is a lot you can do with form, and a lot that browsers and browser extentions can do if you give your form the correct attributes
 
 Add a name attributes to the input name="user_name". Try changing the ID to "first-name". 
 Chrome defaults to remembering what you've put into inputs. 

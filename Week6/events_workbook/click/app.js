@@ -1,5 +1,4 @@
-document.getElementsByClassName("red-box").addEventListener("click",function(){
-    red-box.style.visibilty = "hidden";
+let box = document.getElementsByClassName('red-box')[0]
+box.addEventListener('click', function() {
+    box.style.display = 'none'
 });
-
-
