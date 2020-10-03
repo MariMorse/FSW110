@@ -1,11 +1,13 @@
 // The "submit" event refreshes your browser by default
 // use "e.preventDefault()" in the first line of your callback function to prevent this
 // remember to pass "e" into the callback function
+document.getElementById("submit-me").addEventListener("submit", (event) => {
+   event.preventDefault()  
+});
 
+document.getElementById("name").setAttribute("name", "user_name");
 
-
-
-
+document.getElementById("name").setAttribute("id", "first-name");
 
 /*There is a lot you can do with form, and a lot that browsers and browser extentions can do if you give your form the correct attributes
 
