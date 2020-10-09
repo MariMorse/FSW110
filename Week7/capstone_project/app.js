@@ -45,7 +45,7 @@ var createNewTaskElement = function (taskString) {
 
 
 var addTask = function () {
-    console.log("Add Task...");
+    alert("Add Task...");
 
     var listItem = createNewTaskElement(taskInput.value);
 
@@ -99,7 +99,7 @@ var deleteTask = function () {
 
 
 var taskCompleted = function () {
-    console.log("Complete Task...");
+    alert("Complete Task...");
 
 
     var listItem = this.parentNode;
