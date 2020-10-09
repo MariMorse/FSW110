@@ -1,34 +1,23 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />  
-            Capstone Project
-        </title>
-        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="sylesheet">
-        <link href="css/font-awesome.css" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        
-    </head>
-    <body>
-         <div class="container">
-             <div class="header">
-                <div class="clear">
-                    <i class="fa fa-refresh" aria-hidden="true"></i>
-                </div>
-                <div id="date"></div>
-             </div>
-             <div class="content">
-                 <ul id="list">
+  <head>
+    <title>Todo App</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">    
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        <label for="new-task">Add Item</label><input id="new-task" type="text"><button>Add</button>
+      </p>
+      
+      <h3>Todo</h3>
+      <ul id="incomplete-tasks"></ul>
+      
+      <h3>Completed</h3>
+      <ul id="completed-tasks"></ul>
+    </div>
 
-                 </ul>
-                 <div class="add-item">
-                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                    <input type="text" id="item" placeholder="Add a to-do">
-                 </div>
-             </div>
-         </div>
-        <script src="app.js"></script>
-      </body>
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
 </html>
