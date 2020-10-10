@@ -1,23 +1,33 @@
-<html>
-  <head>
-    <title>Todo App</title>
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">    
-  </head>
-  <body>
-    <div class="container">
-      <p>
-        <label for="new-task">Add Item</label><input id="new-task" type="text"><button>Add</button>
-      </p>
-      
-      <h3>Todo</h3>
-      <ul id="incomplete-tasks"></ul>
-      
-      <h3>Completed</h3>
-      <ul id="completed-tasks"></ul>
-    </div>
+<!DOCTYPE html>
 
-    <script type="text/javascript" src="app.js"></script>
+<html lang="en">
 
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="container">
+
+        <h1>TO-DO LIST</h1>
+
+        <form id="myForm" name="myForm">
+
+            <label for="title">Title:</label><br>
+            <input type="text" name="title" id="title" placeholder="What would you like to do..."><br> 
+            <label for="description">Description:</label><br>
+            <input type="text" name="description" id="description" placeholder="Please add a description"><br>
+            <button name="submit" id="submit">Add to-do</button>
+            
+        </form>
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
 </html>
