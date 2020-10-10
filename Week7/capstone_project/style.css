@@ -1,15 +1,15 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color:#1fb5d3;
+    background-color: #1fb5d3;
     font-family: 'Merienda', cursive;
 }
 
 h1 {
-   color: #0c1485; 
-   font-size: 40px;
-   font-weight: bolder;
-   margin: 0px;
+    color: #0c1485;
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 0px;
 }
 
 label {
@@ -35,7 +35,7 @@ section {
 #title {
     width: 50%;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 30px;
     text-align: center;
     font-size: 15px;
@@ -45,54 +45,50 @@ section {
     width: 50%;
     height: 30px;
     text-align: center;
-    border-radius: 5px;
-    border: 1px solid black;
+    border-radius: 10px;
+    border: 2px solid black;
     font-size: 15px;
 }
- 
-#submit {
+
+#enter {
     margin-top: 10px;
     font-size: 15px;
-    border-radius: 3px;
-    
-    
+    border-radius: 5px;
 }
 
 h3 {
-    color:#F6F4F2;
+    color: black;
     font-size: 25px;
     width: 100%;
     margin: 0px;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 5px solid black;
 }
 
 p {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: normal;
     margin: 0px;
 }
 
 div {
     border: 1px solid none;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 5px;
     margin-left: 15%;
     margin-right: 15%;
     text-align: center;
-    background-color: #C6AD8F;
+    background-color: blue;
     padding-bottom: 8px;
     padding-top: 8px;
 }
 
-
 /* tablet and desktop */
-@media only screen and (min-width: 1000px) {
 
+@media only screen and (min-width: 1000px) {
     section {
         margin-left: 20%;
         margin-right: 20%;
     }
-
     div {
         margin-left: 25%;
         margin-right: 25%;
