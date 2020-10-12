@@ -18,7 +18,7 @@ form.addEventListener('submit', function (event) {
         newTitle.appendChild(myTask)
         document.body.append(newTitle)
 
-        let describe = document.getElementById('description').value
+        let describe = document.getElementById('taskDescription').value
         let newDescribe = document.createElement('p')
         let text = document.createTextNode(describe)
         newDescribe.appendChild(text)
