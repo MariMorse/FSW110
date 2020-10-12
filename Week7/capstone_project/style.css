@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #1fb5d3;
+    background-color: #0a0818;
     font-family: 'Merienda', cursive;
 }
 
@@ -13,14 +13,14 @@ h1 {
 }
 
 label {
-    color: #0c1485;
+    color: #020316;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 section {
     text-align: center;
-    border: 5px solid black;
+    border: 3px solid black;
     border-radius: 10px;
     margin-top: 5%;
     margin-left: 10%;
@@ -34,34 +34,34 @@ section {
 
 #title {
     width: 50%;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 10px;
     height: 30px;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
 }
 
-#description {
+#taskDescription {
     width: 50%;
     height: 30px;
     text-align: center;
     border-radius: 10px;
-    border: 2px solid black;
-    font-size: 15px;
+    border: 3px solid black;
+    font-size: 20px;
 }
 
 #enter {
     margin-top: 10px;
     font-size: 15px;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
 h3 {
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     width: 100%;
     margin: 0px;
-    border-bottom: 5px solid black;
+    border-bottom: 3px solid black;
 }
 
 p {
@@ -71,18 +71,18 @@ p {
 }
 
 div {
-    border: 1px solid none;
+    border: 1px solid black;
     border-radius: 10px;
     margin-top: 5px;
     margin-left: 15%;
     margin-right: 15%;
     text-align: center;
-    background-color: blue;
+    background-image: linear-gradient(white, blue);
     padding-bottom: 8px;
     padding-top: 8px;
 }
 
-/* tablet and desktop */
+
 
 @media only screen and (min-width: 1000px) {
     section {
