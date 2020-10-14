@@ -1,17 +1,18 @@
-document.getElementById("myBtn").addEventListener("click", function () {
-    const firstN = document.getElementById("nameF");
-    const lastN = document.getElementById("nameL");
-    const age = document.getElementById("age");
-    const gender = document.getElementById("gender");
-    const city = document.getElementById("city");
-    const dietary = document.getElementById("diet");
-    alert(" First Name: " + "" + firstN.value + " \nLast Name: " + "" + lastN.value + " \nAge: " + "" + age.value + " \nGender: " + "" + gender.value + " \nCity: " + "" + city.value + " \nDietary Restrictions: " + "" + dietary.value)
+const form = document.form
 
-});
+form.addEventListener('submit', function(event) {
+    event.preventDefault()
+    
+})
 
+var fName = document.form.firstName
+var lName = document.form.lastName
+var age = document.form.age
+var submit = document.form.submit
+var gender = document.form.gender
+var city = document.form.city
 
-
-/*function getSelected() {
+function getSelected() {
     var restrictions = document.form.restrictions
     var checkedBox = []
     for (let i = 0; i < restrictions.length; i++) {
@@ -21,4 +22,21 @@ document.getElementById("myBtn").addEventListener("click", function () {
     }
     return checkedBox
 }
-*/
+
+submit.addEventListener('click', function() {
+    alert('First Name: ' + fName.value + '\n' +
+         'Last Name: ' + lName.value + '\n' + 'Age: ' + age.value + '\n' + 'Gender: ' + gender.value + '\n' + 'Location: ' + city.value + '\n' + 'Dietary Restrictions: ' + getSelected(name))
+
+    fName.value = ''
+    lName.value = ''
+    age.value = ''
+    gender[0].checked = false
+    gender[1].checked = false
+    gender[2].checked = false
+    gender[3].checked = false
+    city.selectedIndex= -1
+    var restrictions = document.form.restrictions
+        for (let i = 0 ; i < restrictions.length; i++) {
+            restrictions[i].checked = false
+        }
+})

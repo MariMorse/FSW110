@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 
 <head>
-    <title>Fairy Tale Airline</title>
-    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css"/>
 </head>
 
 <body>
-    <h1>Fairy Tale Airline</h1>
-    <form name="passengerInfo">
-        <p><label for="fname">First name: </label>
-            <input type="text" id="nameF" name="fname" required /></p>
-        <p><label for="lname">Last name: </label>
-            <input type="text" id="nameL" name="lname" required /></p>
-        <p><label for="age">Age: </label>
-            <input type="number" id="age" name="age" required></p>
-        <p><input type="radio" id="gender" name="gender" value="male" />
-            <label for="male">Male</label><br>
-            <input type="radio" id="gender" name="gender" value="female" />
-            <label for="female">Female</label><br>
-            <input type="radio" id="gender" name="gender" id="gender" value="other" />
-            <label for="other">Other</label>
-            <input type="radio" name="gender" value="noAnswer" />
-            <label for="noAnswer">Prefer not to answer </label></p>
-        <h2>Which fairy tale would you like to go to?</h2>
-        <p><select name="city" id="city">
-                <option value="Neverland">Neverland</option>
-                <option value="Land of Duloc">Land of Duloc</option>
-                <option value="Pixie Hollow">Pixie Hollow</option>
-            </select></p>
-        <p><label for="dietary" id="dietRestrict" name="checkedBox">Dietary Restrictions:</label><br>
-            <label><input type="checkbox"  id="diet" name="checkedBox" />Vegan</label>
-            <label><input type="checkbox" id="diet" name="checkedBox" />Diabetic</label>
-            <label><input type="checkbox" id="diet" name="checkedBox" />Peanut Allergies</label>
-            <label><input type="checkbox" id="diet" name="checkedBox" />Gluten Free</label></p>
-        <p><button id="myBtn" type="submit" name="button">Submit</button></p>
+
+    <h1>Fairy Tale AirLine</h1>
+
+    <form name="form">
+        
+        First Name: <input type="text" id="firstN" name="firstName" required/><br>
+        Last Name: <input type="text" id="lastN" name="lastName" required /><br>
+        Age: <input type="number" min="1" name="age" required/><br>
+        
+        Gender:
+            Male: <input type="radio" name="gender" value="Male" />
+            Female: <input type="radio" name="gender" value="Female" />
+            Transgender: <input type="radio" name="gender" value="Transgender" />
+            Other: <input type="radio" name="gender" value="Other" /><br>
+
+        Where would you like to travel?
+        <select id="select" name="city">
+            <option value="Pixie Hallow">Pixie Hollow</option>
+            <option value="NeverLand">NeverLand</option>
+            <option value="Land of Duloc">Land of Duloc</option>
+        </select><br>
+
+        Dietary Restrictions? Check all that apply:<br>
+            Gluten Free <input type="checkbox" name="restrictions" value="GlutenFree"/>
+            Diabetic <input type="checkbox" name="restrictions" value="diabetic"/>
+            Peanut Allergies <input type="checkbox" name="restrictions" value="peanutAllergies"/><br>
+
+        <button type="button" id="button" name="submit">Submit</button>
+
     </form>
+
     <script src="index.js"></script>
 </body>
 
